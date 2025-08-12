@@ -46,7 +46,7 @@ $RECYCLE.BIN/
 Vagrantfile
 
 #-------------------------
-# Temporary Files
+# CodeIgniter 4 Temporary Files
 #-------------------------
 writable/cache/*
 !writable/cache/index.html
@@ -64,6 +64,22 @@ writable/debugbar/*
 !writable/debugbar/.gitkeep
 
 php_errors.log
+
+#-------------------------
+# CodeIgniter 3 Files
+#-------------------------
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!system/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+# CodeIgniter 3 specific
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
 
 #-------------------------
 # User Guide Temp Files
@@ -124,11 +140,3 @@ _modules/*
 
 /results/
 /phpunit*.xml
-
-#-------------------------
-# Extra Ignore for CI4
-#-------------------------
-/vendor/
-/writable/cache/
-/writable/logs/
-/.env
